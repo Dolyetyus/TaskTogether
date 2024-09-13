@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    tools:context=".ProfileScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:id="@+id/toolbar"
+            android:elevation="4dp"
+            android:background="@color/purple_primary_color"
+            app:titleTextColor="@color/white"
+            app:subtitleTextColor="@color/white"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragment_container">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guidelineFields"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.1" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guidelineDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.85" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guidelineVertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.7" />
+
+                <TextView
+                    android:id="@+id/profileGreetingText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="@color/text_shadow"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="3"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/purple_primary_color"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/guidelineFields"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintVertical_bias="0.532" />
+
+                <TextView
+                    android:id="@+id/profileSettingsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/profile_settings"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple_primary_color"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/guidelineFields" />
+
+                <Button
+                    android:id="@+id/changeUsernameButton"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/rounded_button"
+                    android:text="@string/change_username"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.502"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/profileSettingsText"
+                    app:layout_constraintWidth_default="spread" />
+
+                <Button
+                    android:id="@+id/deleteAccountButton"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_button_red"
+                    android:text="@string/delete_account"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.502"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/guidelineDelete"
+                    app:layout_constraintWidth_default="spread" />
+
+                <EditText
+                    android:id="@+id/usernameEditText"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:autofillHints="username"
+                    android:backgroundTint="@color/purple_dark_color"
+                    android:drawablePadding="12dp"
+                    android:hint="@string/enter_a_new_username"
+                    android:inputType="text|textNoSuggestions"
+                    android:padding="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.482"
+                    app:layout_constraintEnd_toStartOf="@id/guidelineVertical"
+                    app:layout_constraintTop_toBottomOf="@id/changeUsernameButton"
+                    app:layout_constraintWidth_default="spread" />
+
+                <ImageButton
+                    android:id="@+id/confirmationButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="@string/confirm_username"
+                    android:src="@drawable/baseline_check_circle_outline_24"
+                    android:background="@android:color/transparent"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintStart_toEndOf="@+id/guidelineVertical"
+                    app:layout_constraintTop_toBottomOf="@id/changeUsernameButton" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"
+        android:background="@color/white"
+        app:itemIconTint="@color/purple_primary_color"
+        app:itemTextColor="@color/purple_primary_color"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

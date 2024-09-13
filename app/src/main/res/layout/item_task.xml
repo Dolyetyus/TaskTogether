@@ -1,0 +1,153 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/task_background"
+    android:layout_marginTop="8dp"
+    android:elevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/priorityIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:contentDescription="@string/priority"
+                android:src="@drawable/baseline_priority_medium_24" />
+
+            <TextView
+                android:id="@+id/taskTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/purple_dark_color"
+                android:text=""
+                android:textStyle="bold"
+                android:paddingBottom="8dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/expandTaskView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/expand_task"
+            android:src="@drawable/baseline_expand_more_24"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+    <!-- Task Details Section - Initially Hidden -->
+    <LinearLayout
+        android:id="@+id/taskDetailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="6dp">
+
+        <TextView
+            android:id="@+id/taskDescriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            android:textSize="16sp"
+            android:textColor="@color/purple_dark_color"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/taskDueDateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/due_date"
+            android:textSize="16sp"
+            android:textColor="@color/purple_dark_color"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/taskCreatedByTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/created_by"
+            android:textSize="16sp"
+            android:textColor="@color/purple_dark_color"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/priorityTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/priority_level"
+            android:textSize="16sp"
+            android:textColor="@color/purple_dark_color"
+            android:paddingBottom="8dp" />
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:paddingTop="4dp">
+
+            <Button
+                android:id="@+id/completeTaskButton"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="@string/mark_as_completed"
+                android:textSize="13sp"
+                android:drawableStart="@drawable/baseline_check_box_24"
+                android:textAllCaps="false"
+                android:textColor="@color/purple_dark_color"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/editTaskButton"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="@string/edit"
+                android:textSize="13sp"
+                android:drawableStart="@drawable/baseline_edit_24"
+                android:textAllCaps="false"
+                android:textColor="@color/purple_dark_color"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/deleteTaskButton"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:textSize="13sp"
+                android:text="@string/delete"
+                android:drawableStart="@drawable/baseline_delete_outline_24"
+                android:textAllCaps="false"
+                android:textColor="@color/button_Red"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

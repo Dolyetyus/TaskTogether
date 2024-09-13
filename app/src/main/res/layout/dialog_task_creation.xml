@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/taskCreationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_a_new_task"
+        android:textColor="@color/purple_primary_color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/taskTitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/task_title"
+        android:backgroundTint="@color/purple_dark_color"
+        android:padding="12dp"/>
+
+    <EditText
+        android:id="@+id/taskDescriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/task_description"
+        android:backgroundTint="@color/purple_dark_color"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:maxLines="5"
+        android:scrollbars="vertical"/>
+
+    <EditText
+        android:id="@+id/taskDueDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/due_date_yyyy_mm_dd_hh_mm"
+        android:backgroundTint="@color/purple_dark_color"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"
+        android:focusable="false"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:id="@+id/spinnerThing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start|center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/priority"
+            android:textColor="@color/purple_dark_color"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:elevation="4dp"
+            android:padding="12dp"
+            android:paddingEnd="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Spinner -->
+            <Spinner
+                android:id="@+id/taskPrioritySpinner"
+                android:layout_width="match_parent"
+                android:spinnerMode="dropdown"
+                android:hint="@string/priority"
+                android:layout_marginStart="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:elevation="4dp"
+                android:background="@drawable/spinner_background" />
+
+            <!-- Underline view -->
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_marginTop="-8dp"
+                android:background="@color/purple_primary_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/createTaskButton"
+        android:layout_width="142dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/create_task"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/cancelTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/cancel"
+        android:textColor="?android:attr/colorError"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+</LinearLayout>

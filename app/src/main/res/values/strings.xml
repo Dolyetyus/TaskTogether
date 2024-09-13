@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">TaskTogether</string>
+    <string name="email">Email</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign Up</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="password">Password</string>
+    <string name="already_have_an_account_sign_in">Already have an account? Sign In</string>
+    <string name="register">Register</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="username">Username</string>
+    <string name="tasktogetherlogo">TaskTogetherLogo</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="home">Home</string>
+    <string name="logout">Logout</string>
+    <string name="profile">Profile</string>
+
+    <string name="usernameDisplay">%1$s</string>
+    <string name="emailDisplay">%1$s</string>
+    <string name="profileDisplay">Welcome %1$s</string>
+    <string name="current_partner_display">Your current partner is: %1$s</string>
+    <string name="request_text">%1$s has sent you a partnership request:</string>
+    <string name="due_date">Due Date: %1$s</string>
+    <string name="created_by">Created By: %1$s</string>
+    <string name="priority_level">Priority Level: %1$s</string>
+
+    <string name="navigation_drawer_open">Open navigation</string>
+    <string name="navigation_drawer_close">Close navigation</string>
+    <string name="partnerPage">Partner Status</string>
+    <string name="partner_notice_text">To start creating tasks, you need to be paired with your partner first.</string>
+    <string name="log_out">Log out</string>
+    <string name="add_partner">Add Partner</string>
+    <string name="create_a_task">Create a task</string>
+    <string name="partner_s_username">Partner\'s username</string>
+    <string name="add">Add</string>
+    <string name="find_your_partner">Find your partner</string>
+    <string name="remove_partner">Remove Partner</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="confirm_username">Confirm username</string>
+    <string name="enter_a_new_username">Enter a new username</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="change_username">Change Username</string>
+    <string name="profile_settings">Profile Settings</string>
+    <string name="completed_tasks">Completed Tasks</string>
+    <string name="create_a_new_task">Create a new task</string>
+    <string name="task_title">Task Title</string>
+    <string name="task_description">Task Description</string>
+    <string name="due_date_yyyy_mm_dd_hh_mm">Due Date</string>
+    <string name="create_task">Create Task</string>
+    <string name="cancel">Cancel</string>
+    <string name="expand_task">Expand Task</string>
+    <string name="description">Description:</string>
+    <string name="mark_as_completed">Mark as completed</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="confirm">Confirm</string>
+    <string name="no_completed_tasks_found">No completed tasks found.</string>
+    <string name="reactivate_task">Reactivate task</string>
+    <string name="completed_on">Completed on:</string>
+    <string name="completed_by">Completed by:</string>
+    <string name="late">(Late)</string>
+    <string name="icon">icon</string>
+    <string name="you_have_currently_no_tasks_to_do">You have currently no tasks to do.</string>
+    <string name="priority">Priority Level:</string>
+
+    <string name="sort_by">Sort By:</string>
+    <string-array name="sorting_options">
+        <item>Due Date (Ascending)</item>
+        <item>Due Date (Descending)</item>
+        <item>Title (A-Z)</item>
+        <item>Title (Z-A)</item>
+        <item>Priority (High to Low)</item>
+        <item>Priority (Low to High)</item>
+    </string-array>
+</resources>
