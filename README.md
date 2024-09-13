@@ -1,6 +1,6 @@
 # TaskTogether - 1.0
 <p align="center">
-<img src="https://github.com/user-attachments/assets/650bcaeb-1528-4721-a8ee-3c57b331dd9a" width="400"></p>
+<img src="https://github.com/Dolyetyus/TaskTogether/blob/main/screenshots/logo.png" width="400"></p>
 
 ## Introduction
 TaskTogether is a collaborative task management app that helps you and your partner/friend stay organized and work together efficiently. Designed with couples and close friends in mind, TaskTogether lets you create, assign, and manage tasks while staying connected with real-time updates and notifications.
@@ -13,8 +13,8 @@ Whether you're managing personal chores, work tasks, or life goals, TaskTogether
 - Log in safely using your username and password.
 - End-to-end encryption using Google Firebase Auth services.
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/2db44bd0-0b8f-4ae2-8198-ed6ee5eb8f53" width="250px"/> 
-  <img src="https://github.com/user-attachments/assets/78a5c8f1-8a42-42a6-93fe-231781974218" width="250px"/> 
+  <img src="https://raw.githubusercontent.com/Dolyetyus/TaskTogether/main/screenshots/auth1.jpg" width="250px"/> 
+  <img src="https://raw.githubusercontent.com/Dolyetyus/TaskTogether/main/screenshots/auth2.jpg" width="250px"/> 
 </div>
 
 ### Partner Integration
