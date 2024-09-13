@@ -1,6 +1,6 @@
 # TaskTogether - 1.0
 <p align="center">
-<img src="https://github.com/Dolyetyus/TaskTogether/blob/main/screenshots/logo.png" width="400"></p>
+<img src="https://github.com/Dolyetyus/TaskTogether/blob/main/screenshots/logo.png" width="300"></p>
 
 ## Introduction
 TaskTogether is a collaborative task management app that helps you and your partner/friend stay organized and work together efficiently. Designed with couples and close friends in mind, TaskTogether lets you create, assign, and manage tasks while staying connected with real-time updates and notifications.
@@ -22,9 +22,9 @@ Whether you're managing personal chores, work tasks, or life goals, TaskTogether
 - Accept or reject incoming partner requests.
 - View your current partner's details and remove them if needed.
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/910e63ba-5e24-47fd-979c-f8ab67000675" width="250px"/> 
-  <img src="https://github.com/user-attachments/assets/ef2f3454-ca1f-4912-a139-1cd6a59485ca" width="250px"/>
-  <img src="https://github.com/user-attachments/assets/4f231197-ae54-477c-b8ea-0737f30454ca" width="250px"/>
+  <img src="https://raw.githubusercontent.com/Dolyetyus/TaskTogether/main/screenshots/partner1.jpg" width="250px"/> 
+  <img src="https://raw.githubusercontent.com/Dolyetyus/TaskTogether/main/screenshots/partner2.jpg" width="250px"/>
+  <img src="https://raw.githubusercontent.com/Dolyetyus/TaskTogether/main/screenshots/partner3.jpg" width="250px"/>
 </div>
   
 ### Collaborative Task Management
@@ -32,10 +32,10 @@ Whether you're managing personal chores, work tasks, or life goals, TaskTogether
 - Add task descriptions, due dates, and set task priorities.
 - Real-time updates when tasks are created, updated, or completed by your partner.
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/0945cab8-5ab9-478d-ba1f-f00bf849325b" width="250px"/> 
-  <img src="https://github.com/user-attachments/assets/d6d0b6bd-d1a1-45c8-8f3d-cfd6f1d56b6c" width="250px"/>
-  <img src="https://github.com/user-attachments/assets/ec6fc5d1-407a-4ba4-b94b-0831362a2b64" width="250px"/>
-  <img src="https://github.com/user-attachments/assets/298f5aea-906b-4936-9647-36191fad0d14" width="250px"/>
+  <img src="https://raw.githubusercontent.com/Dolyetyus/TaskTogether/main/screenshots/collab1.jpg" width="250px"/> 
+  <img src="https://raw.githubusercontent.com/Dolyetyus/TaskTogether/main/screenshots/collab2.jpg" width="250px"/>
+  <img src="https://raw.githubusercontent.com/Dolyetyus/TaskTogether/main/screenshots/collab3.jpg" width="250px"/>
+  <img src="https://raw.githubusercontent.com/Dolyetyus/TaskTogether/main/screenshots/collab4.jpg" width="250px"/>
 </div>
   
 ### Task Sorting and Filtering
@@ -43,23 +43,23 @@ Whether you're managing personal chores, work tasks, or life goals, TaskTogether
 - Choose between ascending and descending order.
 - Search tasks by title.
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/8d00a652-fe59-437a-b52b-65313ad299c8" width="250px"/> 
-  <img src="https://github.com/user-attachments/assets/ead31b60-82f5-4a81-a99a-bb6e75b535cf" width="250px"/>
+  <img src="https://raw.githubusercontent.com/Dolyetyus/TaskTogether/main/screenshots/sort1.jpg" width="250px"/> 
+  <img src="https://raw.githubusercontent.com/Dolyetyus/TaskTogether/main/screenshots/sort2.jpg" width="250px"/>
 </div>
 
 ### Profile Settings
 - Change your username as you like (as long as the username is available).
 - Delete your account completely, no need to be worried about your privacy.
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/eb95a085-3cd8-431f-9373-b79833d9ac46" width="250px"/> 
+  <img src="https://raw.githubusercontent.com/Dolyetyus/TaskTogether/main/screenshots/profile.jpg" width="250px"/> 
 </div>
 
 ### User-Friendly Interface
 - Simple and intuitive user interface.
 - Edge-to-edge UI design for a seamless experience.
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/969640fc-6855-4c15-9829-7e610d165a64" width="250px"/> 
-  <img src="https://github.com/user-attachments/assets/efed9080-db1b-4df6-9217-32026c9efeb9" width="250px"/> 
+  <img src="https://raw.githubusercontent.com/Dolyetyus/TaskTogether/main/screenshots/ui1.jpg" width="250px"/> 
+  <img src="https://raw.githubusercontent.com/Dolyetyus/TaskTogether/main/screenshots/ui2.jpg" width="250px"/> 
 </div>
 
 ### Firebase Integration
