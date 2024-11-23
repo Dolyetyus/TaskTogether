@@ -207,53 +207,21 @@ class TaskAdapter(
         }
 
         private fun isTaskLate(dueDate: String?, completedOn: String?): Boolean {
-            if (dueDate == null || completedOn == null) return false
+            if (dueDate.isNullOrBlank() || completedOn.isNullOrBlank()) return false
 
-            try {
-                // I tried to parse the dates using parse() method,
-                // but it kept throwing java.text.ParseException: Unparseable date.
-                // So I had to compare the dates manually
+            return try {
+                val formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm")
 
-                // Extracting components from dueDate
-                val dueParts = dueDate.trim().split(" ", ":","-")
-                val dueDay = dueParts[0].toInt()
-                val dueMonth = dueParts[1].toInt()
-                val dueYear = dueParts[2].toInt()
-                val dueHour = dueParts[3].toInt()
-                val dueMinute = dueParts[4].toInt()
+                // Parse the due date and completed date strings
+                val dueDateTime = LocalDateTime.parse(dueDate.trim(), formatter)
+                val completedDateTime = LocalDateTime.parse(completedOn.trim(), formatter)
 
-                // Extracting components from completedOn
-                val completedParts = completedOn.trim().split(" ", ":","-")
-                val completedDay = completedParts[0].toInt()
-                val completedMonth = completedParts[1].toInt()
-                val completedYear = completedParts[2].toInt()
-                val completedHour = completedParts[3].toInt()
-                val completedMinute = completedParts[4].toInt()
-
-                // Compare years
-                if (completedYear > dueYear) return true
-                if (completedYear < dueYear) return false
-
-                // Compare months
-                if (completedMonth > dueMonth) return true
-                if (completedMonth < dueMonth) return false
-
-                // Compare days
-                if (completedDay > dueDay) return true
-                if (completedDay < dueDay) return false
-
-                // Compare hours
-                if (completedHour > dueHour) return true
-                if (completedHour < dueHour) return false
-
-                // Compare minutes
-                if (completedMinute > dueMinute) return true
-
-                return false
+                // Check if the task was completed after the due date
+                completedDateTime.isAfter(dueDateTime)
             }
-            catch (e: Exception) {
+            catch (e: DateTimeParseException) {
                 e.printStackTrace()
-                return false // In case of any error, consider task as not late
+                false // if any error happens, not late
             }
         }
 
